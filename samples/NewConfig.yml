@@ -165,7 +165,7 @@ settings:
         # 0 for unlimited time (Very dangerous, use it at your own risk!)
         # Consider that if player's ip has changed but the timeout hasn't
         # expired, player will be kicked out of the sever!
-        timeout: 10
+        timeout: 1000
         # When enabled a player's session will expire if someone tries to
         # login with a different IP Address.
         expire_on_ip_change: true
@@ -308,11 +308,11 @@ settings:
         # ===========================
 
         # Max number of registrations per IP (default: 1)
-        maxRegPerIp: 1
+        maxRegPerIp: 10000
         # Maximum allowed number of Logins per IP, 0 to disable (default: 0)
-        maxLoginPerIp: 0
+        maxLoginPerIp: 10000
         # Maximum allowed number of Joins per IP, 0 to disable (default: 0)
-        maxJoinPerIp: 0
+        maxJoinPerIp: 10000
 
         # When this setting is enabled, online players can't be kicked out
         # due to "Logged in from another Location"
